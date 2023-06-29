@@ -1,0 +1,460 @@
+@charset "UTF-8";
+/*--- METODOS ---*/
+/*--- MAPAS ---*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* --- HEADER ---*/
+.contenedorHeader {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 10%;
+}
+
+.ch1 {
+  margin: 3% 3% 3% 15%;
+}
+
+.ch2 {
+  margin: 5% 10% 0 0;
+}
+
+header div ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header div ul li {
+  float: right;
+  padding: 0 10px 0 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header ul li a:hover {
+  color: goldenrod;
+}
+
+header button svg:hover {
+  color: rgb(228, 94, 16);
+  width: 25px;
+  height: 25px;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: 9%;
+  background-color: white;
+  padding-bottom: 6%;
+}
+
+.c1 {
+  margin-top: 2%;
+  background-color: white;
+  display: flex;
+  justify-content: left;
+  padding-left: 5%;
+}
+
+.c2 {
+  display: flex;
+  justify-content: center;
+}
+
+.c3 {
+  list-style: none;
+  padding-top: 4%;
+  display: flex;
+  justify-content: right;
+}
+
+/* --- TAMAÑO IMAGENES SLIDES "CONOCENOS" ---*/
+.imagenTrayectoria {
+  height: 90%;
+  margin: 2% 2% 3% 5%;
+  width: 90%;
+}
+
+.navbar-logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 5%;
+  height: 5%;
+}
+
+.navbar-logo img {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+/*--- FOOTER---*/
+.iconos {
+  margin: 5px;
+}
+
+.footContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 30% 25% 10%;
+  width: 100%;
+  height: 20%;
+  background-color: lightgray;
+  border-top: 3px double;
+}
+
+.fcCaja {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+}
+
+footer div ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer div ul li {
+  float: right;
+  padding: 0 10px 0 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer ul li a:hover {
+  color: goldenrod;
+}
+
+.linea {
+  border-left: 1px solid black;
+  padding: 0 20px 0 20px;
+}
+
+.fc1 {
+  display: flex;
+  justify-content: center;
+}
+
+.fc1 h5 {
+  text-align: center;
+  padding-top: 1%;
+}
+
+.fc2 {
+  display: flex;
+  justify-content: center;
+}
+
+.fc3 h6 {
+  text-align: center;
+}
+
+footer a svg:hover {
+  width: 80%;
+  height: 80%;
+}
+
+/*--- CATALOGO (TODOS COMPONENTES DEL MAIN) ---*/
+.contenedorCarta {
+  margin: 3% 12% 3% 12%;
+}
+
+.carta {
+  margin: 0 3% 0 3%;
+}
+
+.contenedorCartalinea {
+  margin: 3% 0 3% 0;
+}
+
+/*--- CONOCENOS ---*/
+.caja {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  width: 100%;
+  height: auto;
+  margin-top: 1%;
+}
+
+.caja1 {
+  border-top: groove;
+  margin-left: 10%;
+  animation-name: borde;
+  animation-duration: 30s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+.caja2 {
+  border-top: groove;
+  animation-name: borde;
+  animation-name: borde;
+  animation-duration: 30s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+.caja3 {
+  border-top: groove;
+  margin: 7% 0 0 10%;
+  animation-name: borde;
+  animation-duration: 30s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+.caja4 {
+  border-top: groove;
+  margin-top: 7%;
+  animation-name: borde;
+  animation-duration: 30s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+.caja5 {
+  border-top: groove;
+  margin: 7% 0 0 10%;
+  animation-name: borde;
+  animation-duration: 30s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+.caja6 {
+  border-top: groove;
+  margin-top: 7%;
+  animation-name: borde;
+  animation-duration: 30s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+p {
+  text-align: justify;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*--- UBICACION ---*/
+.contenidoUbicacion {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  width: 100%;
+  height: 69%;
+  margin-top: 1%;
+}
+
+.cajaUbicacion1 {
+  border-top: groove;
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  animation-name: borde;
+  animation-duration: 30s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+.cajaUbicacion1 img {
+  width: 80%;
+  height: 60%;
+  padding-top: 10%;
+}
+
+.cajaUbicacion2 {
+  padding-top: 10%;
+  border-top: groove;
+  animation-name: borde;
+  animation-duration: 30s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+/*--- CONTENIDO CONTACTO ---*/
+.complemento {
+  padding: 5% 0 10% 0;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  width: 100%;
+  height: 69%;
+  margin: 1% 0 5% 0;
+}
+
+.contacto1 {
+  border-top: groove;
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  animation-name: borde;
+  animation-duration: 30s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+.contacto2 {
+  padding-top: 5%;
+  border-top: groove;
+  animation-name: borde;
+  animation-duration: 30s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+/*--- ANIMACIÓN BORDES DE CAJA1 A CAJA6 ---*/
+@keyframes borde {
+  0% {
+    border-top: lightgray groove;
+  }
+  20% {
+    border-top: rgb(163, 160, 160) groove;
+  }
+  40% {
+    border-top: rgb(119, 119, 119) groove;
+  }
+  60% {
+    border-top: rgb(85, 85, 85) groove;
+  }
+  80% {
+    border-top: rgb(54, 54, 54) groove;
+  }
+  100% {
+    border-top: black groove;
+  }
+}
+/*--- MEDIA QUERIE "MOBILE VIEW" ---*/
+@media only screen and (max-width: 480px) {
+  .caja {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .caja1 {
+    border-top: groove;
+    margin-right: 10%;
+  }
+  .caja2 {
+    border-top: groove;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .caja3 {
+    border-top: groove;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .caja4 {
+    border-top: groove;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .caja5 {
+    border-top: groove;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .caja6 {
+    border-top: groove;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .contenedorHeader {
+    margin-bottom: 10%;
+  }
+  .contenidoUbicacion {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 30%;
+  }
+  .cajaUbicacion1 {
+    border-top: groove;
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .cajaUbicacion1 img {
+    width: 100%;
+    height: 80%;
+  }
+  .cajaUbicacion2 {
+    padding-top: 10%;
+    border-top: groove;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .contenido {
+    margin-bottom: 5%;
+  }
+  .contacto {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 70%;
+  }
+  .contacto1 {
+    border-top: groove;
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .contacto1 img {
+    width: 100%;
+    height: 80%;
+  }
+  .contacto2 {
+    padding-top: 10%;
+    border-top: groove;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  header ul li a:hover {
+    color: goldenrod;
+  }
+}
+@media only screen and (max-width: 305px) {
+  .contenedorHeader {
+    margin-bottom: 50px;
+  }
+  .contenidoUbicacion {
+    margin-bottom: 100px;
+    overflow: hidden;
+  }
+}
+
+
+
+.dark{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.light{
+  background-color: white;
+  color: black;
+}
+
+
+.botonesAgrupados{
+  padding-right: 35%;
+  padding-left: 35%;
+  display: inline-block
+}
+
+.deshabilitarBtn{
+  pointer-events: none;
+}
